@@ -1,0 +1,22 @@
+Passos para fazer upload ou download de arquivos do github:
+
+1) Instalar um cliente git na sua máquina.
+
+2) Primeiro upload ou download (caso o arquivo do git-hub já esteja populado):
+- se não existir o arquivo desejado, criar uma pasta vazia com o nome desejado no servidor github (geralmente pode ser feita via web)
+- abrir o bash do git
+- navegar no bash da sua máquina até a pasta onde deseja criar a pasta clone (ex.: cd C/Users/rafae/Rafael_Mateus/Rafael/UNB)
+- digitar o comando: git clone https://github.com/Rafael-Sapienza/programas programas #clona o repositório na pasta programas que será criada na sua máquina
+- navega no bash até o diretório criado. 
+- pode-se adicionar (modificar) arquivos neste diretório usando o explorer.
+- digitar o comando: git status (é possível verificar quais pastas foram adicionadas)
+- digitar: git add .  #adiciona todos os arquivos
+- digitar: git commit -m "comentário do commit" #comita os arquivos
+- digitar: git push
+
+3) Uploads posteriores:
+- navega no bash até o diretório que tem o sincronismo (pasta que contém o arquivo oculto '.git') com o git (ex.: cd C/Users/rafae/Rafael_Mateus/Rafael/UNB/programas)
+- digitar: git status
+- digitar: git add * ou git add .  #adiciona todos os arquivos
+- digitar: git commit -m "comentário do commit" #comita os arquivos
+- digitar: git push
