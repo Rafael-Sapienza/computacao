@@ -1,0 +1,300 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    font-family: "Karla", sans-serif;
+}
+
+nav {
+    margin: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgLogoText {
+    width: 20rem;
+}
+
+.naruto {
+    width: 15rem;
+}
+
+.fantasyKnockout {
+    width: 10rem;
+}
+
+.attackOnTitan {
+    width: 17rem;
+}
+
+.bokuNoHero {
+    width:18rem;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links > ul > li > a {
+    color:black;
+}
+
+.links > ul > li > a:hover {
+    color:blue;
+    transition: 0.3s all;
+}
+
+.links > li {
+    margin: 0 1rem 0 1rem;
+}
+
+.login_nav > li > a {
+    color: rgb(35, 35, 155);
+    font-weight: 600;
+    outline:solid 2px rgb(35, 35, 155);
+    padding:0.5rem;
+    border-radius: 2px;
+    display: flex;
+}
+
+.login_nav > li > a:hover {
+    color:black;
+} 
+
+.links4 {
+    display: flex;
+}
+
+.links4 > li {
+    margin:0 1rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.mainSection {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 17vh;
+}
+
+
+
+.mainSection > div {
+    height: 55vh;
+}
+
+.mainSection > div > h1 {
+    color:#1f1f1f;
+    font-size: 4rem;
+    width:40rem;
+    margin:auto;
+    line-height: 4rem;
+    word-spacing: -0.5rem;
+}
+
+.mainSection > div > p {
+    color:#1f1f1f;
+    font-size: 1.3rem;
+    width:40rem;
+    margin:2rem auto 2rem auto;
+    line-height: 2rem;
+}
+
+.mainSection > div > li {
+    margin:3rem 1rem 1rem 2rem;
+}
+
+.mainSection > div > li > a {
+    background-color: #fc593b;
+    color:yellow;
+    font-size: 1.2rem;
+    padding:1rem;
+    border-radius: 1px;
+    font-weight: 600;
+}
+
+.propaganda {
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.propaganda > div {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.propaganda > div > div > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.propaganda > div > div > p {
+    width:20rem;
+    color:black;
+}
+
+.propaganda > div> div > img {
+    margin:1rem;
+}
+
+#burger {
+    cursor:pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    #burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .login_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .links4 {
+        position: absolute;
+        text-align: center;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        height:fit-content;
+        margin:6rem auto auto auto;
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:775px) {
+    .mainSection > div > h1 {
+        font-size: 2rem;
+        width:20rem;
+        line-height: 2rem;
+        word-spacing: 0.1rem;
+    }
+    .mainSection > div > p {
+        font-size:1rem;
+        width:100%;
+        padding: 2rem auto 2rem auto;
+        line-height: 1.3rem;
+    }
+    .propaganda > div > div > h2 {
+        font-size: 01rem;
+        width:20rem;
+        line-height: 2rem;
+        word-spacing: 0.1rem;
+    }
+    .propaganda > div > div > p {
+        font-size:1rem;
+        width:100%;
+        padding: 2rem auto 2rem auto;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .mainSection {
+        margin-bottom: 60rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .mainSection > div > li > a {
+        padding: 3rem auto 1rem auto;
+        line-height: 3.6rem;
+    }
+}
+
+
+.motivos {
+    margin-top: 25rem;
+    background-color: blueviolet;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    padding: 1rem 0 1rem 0;
+    flex-wrap: wrap;
+}
+
+.motivos > div {
+    margin:2rem;
+}
+
+.nighteye {
+    width:15rem;
+}
+
+
+
+
+
+.texts > h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.texts> h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color: #1f1f1f;
+}
+
+.texts > p {
+    margin-bottom: 10px;
+}
+
+
+footer >div > ul > img {
+    width: 15rem;
+}
+
+footer > div {
+    display:flex;
+    justify-content: space-evenly;
+    margin:2rem 0 2rem 0;
+    flex-wrap: wrap;
+}
+
+.linksFooter {
+    display: flex;
+    gap:5rem;
+    flex-wrap: wrap;
+}
+
+.linksFooter > ul > li {
+    margin:1rem; 
+    color: red;
+}
+
+.linksFooter > ul > li > a {
+    color:black;
+    font-weight: 500;
+}
+
+.headerLinks {
+    padding-bottom: 1rem;
+}
