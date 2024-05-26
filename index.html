@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="shortcut icon" 
+    href="/imagens/iconeDeFullMetalAlchemist.ico" 
+    type="image/x-icon">
+    <title>Animes.com</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+<body onresize="verificaLargura()">
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="/index.html"><img class="imgLogoText" 
+                    src="/imagens/frontImage.png" 
+                    alt="imagemLogo"></a></li>
+                <ul class="links4" id="itens">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Lista de animes</a></li>
+                    <li><a href="#">Gêneros</a></li>
+                    <li><a href="#">Planos</a></li>
+                </ul>
+                <ul class="login_nav">
+                    <li><a href="#">Login
+                    </a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+                <i class="material-symbols-outlined" id="burger" onclick="clickMenu()">Menu</i>
+            </ul>
+        </nav>
+    </header>
+    <section class="mainSection">
+        <div>
+            <h1>O Site de Animes Número 1 do Mundo</h1>
+            <p>Você é fanático por animes? Então, prepare-se para uma experiência incrível! No animes.com, você encontra:</p>
+            <li><a href="#">Inicie o período de teste gratuito</a></li>
+        </div>
+        <div class="propaganda">
+            <div>
+                <div><img class="naruto" src="/imagens/naruto.png" alt="naruto"></div>
+                <div><h2>1. Mais de 500 animes disponíveis</h2><p>De Shounens clássicos a Isekais recentes, temos de tudo para satisfazer seu gosto! </p></div>
+            </div>
+            <div>
+                <div><img class="fantasyKnockout" src="/imagens/fantasyKnockout.png" alt="fantasyKnockout"></div>
+                <div><h2>2. Mais de 2000 mangás em exibição</h2><p>Explore um vasto acervo de mangás, desde os mais populares até os mais raros, tudo em um só lugar.</p></div>
+            </div>
+            <div>
+                <div><img class="attackOnTitan" src="/imagens/attackOnTitan.png" alt="attackOnTitan"></div>
+                <div><h2>3. Preço acessível de R$15 mensais</h2><p>Toda essa diversão e entretenimento por um valor que cabe no seu bolso.</p></div>
+            </div>
+            <div>
+                <div>
+                    <img class="bokuNoHero" src="/imagens/bokuNoHero.png" alt="bokuNoHero">
+                </div>
+                <div><h2>4. Quase 70% dos animes dublados</h2><p>Curta seus animes favoritos com dublagens de alta qualidade, trazendo ainda mais emoção às histórias que você ama.</p></div>
+            </div>
+        </div>
+    </section> 
+    <section class="motivos">
+        <div><img class="nighteye" src="/imagens/nighteyeImage.png" alt="nighteye"></div>
+        <div class="texts">
+            <h2>Porque escolher o animes.com?</h2>
+            <h3>Biblioteca sempre atualizada</h3>
+            <p>Novos animes e mangás adicionados regularmente.</p>
+            <h3>Streaming rápido e de alta qualidade</h3> <p>Assista sem interrupções e com a melhor qualidade possível.</p>
+            <h3>Downloads de mangás e episódios de animes</h3> <p>Baixe seus episódios e capítulos favoritos para assistir e ler offline, com limite de 15 episódios.</p>
+            <h3>Comunidade de fãs</h3>
+            <p>Participe de discussões, eventos e faça novos amigos que compartilham da mesma paixão.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <ul>
+            <img src="/imagens/frontImage.png" alt="imagemLogo">
+            </ul>
+            <div class="linksFooter">
+                <ul>
+                    <li><p class="headerLinks">Ajuda</p></li>
+                    <li><a href="#">Esqueci senha</a></li>
+                    <li><a href="#">Problemas no pagamento</a></li>
+                    <li><a href="#">Descontos</a></li>
+                    <li><a href="#">Segurança</a></li>
+                </ul>
+                <ul>
+                    <li><p class="headerLinks">Apoiar</p></li>
+                    <li><a href="#">Imprimir</a></li>
+                    <li><a href="#">Termo de serviço</a></li>
+                    <li><a href="#">Poilítica de privacidade</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == "block") {
+                itens.style.display = "none";
+            }else {
+                itens.style.display = "block";
+            }
+        }
+        function verificaLargura() {
+            if (window.innerWidth >= 1024) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
